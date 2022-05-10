@@ -10,8 +10,8 @@ namespace NotasWorkshop.Model.Contexts.NotasWorkshop
     public class NotasWorkshopDbContext : BaseDbContext, INotasWorkshopDbContext
     {
         public NotasWorkshopDbContext(DbContextOptions<NotasWorkshopDbContext> options,
-            IOptions<AppSettings> appSettings = null) : base(options,
-                appSettings)
+            IOptions<AppSettings> appSettings)
+            : base(options, appSettings)
         {
         }
 

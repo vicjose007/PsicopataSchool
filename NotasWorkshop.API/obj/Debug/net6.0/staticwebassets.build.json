@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "b+LqFsATYOyZAf49c5H/ed4rk4QyaQ8aA3Iw+8Dd8+c=",
+  "Source": "NotasWorkshop.API",
+  "BasePath": "_content/NotasWorkshop.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

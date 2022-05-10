@@ -9,6 +9,17 @@ using NotasWorkshop.Services.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.GetConfigurationSections(builder.Configuration);
+builder.Services.AddApiRegistry();
+builder.Services.AddServicesRegistry();
+builder.Services.AddBlRegistry(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddModelRegistry();
+builder.Services.AddCoreRegistry();
+
+string myAppDbContextConnection = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<NotasWorkshopDbContext>(op => op.UseSqlServer(myAppDbContextConnection),
+    ServiceLifetime.Transient);
+
 // Add services to the container.
 builder.Services.AddControllers(options =>
 {
@@ -20,16 +31,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-string myAppDbContextConnection = app.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<NotasWorkshopDbContext>(op => op.UseSqlServer("Data Source=(localdb)\\ProjectsV13;Initial Catalog=Notes;Integrated Security=True"),
-    ServiceLifetime.Transient);
 
-/// injections
-builder.Services.AddApiRegistry(app.Configuration);
-builder.Services.AddServicesRegistry();
-builder.Services.AddBlRegistry(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddModelRegistry();
-builder.Services.AddCoreRegistry();
+/// Wrong
+//string myAppDbContextConnection = app.Configuration.GetConnectionString("DefaultConnection");
+//builder.Services.AddDbContext<NotasWorkshopDbContext>(op => op.UseSqlServer(myAppDbContextConnection),
+//    ServiceLifetime.Transient);
 /// 
 
 // Configure the HTTP request pipeline.

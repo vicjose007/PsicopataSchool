@@ -45,7 +45,6 @@ namespace NotasWorkshop.Services.Generic
         public virtual async Task<TEntityDto> Save(TEntityDto entityDto)
         {
             TEntity entity = _mapper.Map<TEntity>(entityDto);
-
             _repository.Add(entity);
             await _uow.Commit();
 

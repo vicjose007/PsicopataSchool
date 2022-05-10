@@ -11,9 +11,9 @@ namespace NotasWorkshop.Model.Contexts
 {
     public abstract class BaseDbContext : DbContext
     {
-        private readonly string _userEmail;
-        private readonly AppSettings _appSettings;
-        public BaseDbContext(DbContextOptions options, IOptions<AppSettings> appSettings = null) : base(options)
+        private readonly string? _userEmail;
+        private readonly AppSettings? _appSettings;
+        public BaseDbContext(DbContextOptions options, IOptions<AppSettings>? appSettings = null) : base(options)
         {
             _appSettings = appSettings?.Value;
         }

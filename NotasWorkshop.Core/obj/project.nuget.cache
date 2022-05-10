@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SNqo81efY47VLF+zRF/zKzIs37++rOAg8krfyzuZwqXJOuOOvsJi9QbCe+fapYFDC2L1jSjeMCt4DJ07A9TfiA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sx-G5-Laptop\\Projects\\Workshop\\FirstPractice\\NotasWorkshop\\NotasWorkshop.Core\\NotasWorkshop.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sx-G5-Laptop\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.7\\microsoft.extensions.dependencyinjection.3.1.7.nupkg.sha512",
+    "C:\\Users\\Sx-G5-Laptop\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.7\\microsoft.extensions.dependencyinjection.abstractions.3.1.7.nupkg.sha512"
+  ],
+  "logs": []
+}
