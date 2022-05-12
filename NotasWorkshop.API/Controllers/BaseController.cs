@@ -1,14 +1,19 @@
 ﻿using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 //using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Mvc;
 using NotasWorkshop.Core.BaseModel.BaseEntity;
 using NotasWorkshop.Core.BaseModel.BaseEntityDto;
+using NotasWorkshop.Model.Entities;
+using NotasWorkshop.Model.Repositories;
 using NotasWorkshop.Services.Generic;
+using NotasWorkshop.Services.Services;
 using System.Net;
 
 namespace NotasWorkshop.Api.Controllers
 {
+
     [Produces("application/json")]
     [Route("api/[controller]")]
     public class BaseController<TEntity, TEntityDto> : ControllerBase, IBaseController
@@ -20,7 +25,10 @@ namespace NotasWorkshop.Api.Controllers
         public Type TypeDto { get; set; }
         public string TypeName { get; set; }
 
-        protected readonly IEntityCRUDService<TEntity, TEntityDto> _entityCRUDService;
+        private readonly IEntityCRUDService<TEntity, TEntityDto> _entityCRUDService;
+        private INoteService noteService;
+        private IValidatorFactory validationFactory;
+        private IMapper mapper;
 
         public BaseController(IEntityCRUDService<TEntity, TEntityDto> entityCRUDService, IValidatorFactory validationFactory, IMapper mapper)
         {
@@ -30,6 +38,7 @@ namespace NotasWorkshop.Api.Controllers
             TypeName = typeof(TEntity).Name;
             _mapper = mapper;
         }
+
 
         /// <summary>
         /// Get all by query options.
@@ -104,5 +113,6 @@ namespace NotasWorkshop.Api.Controllers
 
             return Ok(entityDto);
         }
+
     }
 }

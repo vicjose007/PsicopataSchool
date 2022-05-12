@@ -7,7 +7,7 @@ namespace NotasWorkshop.Core.BaseModel.BaseEntityDto
 {
     public interface IBaseEntityDto : IBaseDto
     {
-        string CreatedBy { get; set; }
-        string UpdatedBy { get; set; }
+        string? CreatedBy { get; set; }
+        string? UpdatedBy { get; set; }
     }
 }

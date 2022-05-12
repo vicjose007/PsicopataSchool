@@ -15,7 +15,12 @@ namespace NotasWorkshop.Model.Contexts.NotasWorkshop
         {
         }
 
+
+
         public DbSet<Note> Notes { get; set; }
+        public DbSet<User> Users { get; set; }  
+
+
 
         public DbSet<T> GetDbSet<T>() where T : class, IBaseEntity => Set<T>();
 

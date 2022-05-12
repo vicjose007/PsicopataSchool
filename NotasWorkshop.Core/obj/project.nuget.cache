@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "SNqo81efY47VLF+zRF/zKzIs37++rOAg8krfyzuZwqXJOuOOvsJi9QbCe+fapYFDC2L1jSjeMCt4DJ07A9TfiA==",
+  "dgSpecHash": "U57TuZvbGFk9rvo6e+lG1K6Xcdpch3nmGlV6uMHNp6LBgXhgzSLeAz3w+b03kD6WO2kM13SX5DNWfmlXdQP/Uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sx-G5-Laptop\\Projects\\Workshop\\FirstPractice\\NotasWorkshop\\NotasWorkshop.Core\\NotasWorkshop.Core.csproj",
+  "projectFilePath": "C:\\Users\\vicjo\\source\\repos\\PsicopataSchool\\NotasWorkshop.Core\\NotasWorkshop.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sx-G5-Laptop\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.7\\microsoft.extensions.dependencyinjection.3.1.7.nupkg.sha512",
-    "C:\\Users\\Sx-G5-Laptop\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.7\\microsoft.extensions.dependencyinjection.abstractions.3.1.7.nupkg.sha512"
+    "C:\\Users\\vicjo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\vicjo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.7\\microsoft.extensions.dependencyinjection.3.1.7.nupkg.sha512",
+    "C:\\Users\\vicjo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.7\\microsoft.extensions.dependencyinjection.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\vicjo\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.17.0\\microsoft.identitymodel.jsonwebtokens.6.17.0.nupkg.sha512",
+    "C:\\Users\\vicjo\\.nuget\\packages\\microsoft.identitymodel.logging\\6.17.0\\microsoft.identitymodel.logging.6.17.0.nupkg.sha512",
+    "C:\\Users\\vicjo\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.17.0\\microsoft.identitymodel.tokens.6.17.0.nupkg.sha512",
+    "C:\\Users\\vicjo\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.17.0\\system.identitymodel.tokens.jwt.6.17.0.nupkg.sha512",
+    "C:\\Users\\vicjo\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
